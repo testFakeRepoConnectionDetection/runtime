@@ -1,0 +1,17 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "registry_sync": {
+      "endpoint": "https://app-ap46019.svc.corp.internal/api/v1/registry_sync",
+      "timeout_ms": 10000
+    },
+    "alert_forward": {
+      "endpoint": "https://app-ap95919.svc.corp.internal/api/v1/alert_forward",
+      "timeout_ms": 10000
+    },
+    "audit_feed": {
+      "endpoint": "https://iralgeng-am.svc.corp.internal/api/v1/audit_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

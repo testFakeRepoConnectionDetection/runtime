@@ -1,0 +1,13 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "archive_drop": {
+      "endpoint": "https://eqdalgeng.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    },
+    "billing_feed": {
+      "endpoint": "https://crk-collateral-engine-amer.svc.corp.internal/api/v1/billing_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

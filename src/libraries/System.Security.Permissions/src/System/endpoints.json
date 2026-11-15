@@ -1,0 +1,18 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "quota_check": {
+      "counterpart": "Counterparty Risk Collateral Engine APAC",
+      "endpoint": "https://ext-gw-368.svc.corp.internal/api/v1/quota_check",
+      "timeout_ms": 10000
+    },
+    "archive_drop": {
+      "source_system": "reg-evidence-archive-apac",
+      "secret_env": "REGULATORY_REPORTING_EVIDENCE_ARCHIVE_APAC_WEBHOOK_SECRET"
+    },
+    "catalog_pull": {
+      "endpoint": "https://fadevepro-ap.svc.corp.internal/api/v1/catalog_pull",
+      "timeout_ms": 10000
+    }
+  }
+}

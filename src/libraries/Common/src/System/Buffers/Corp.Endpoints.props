@@ -1,0 +1,8 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <CorpQuotaCheckUrl>https://fadassser-em.svc.corp.internal/api/v1/quota_check</CorpQuotaCheckUrl>
+    <CorpSnapshotShipUrl>https://msgnotser-em.svc.corp.internal/api/v1/snapshot_ship</CorpSnapshotShipUrl>
+    <CorpReportPushUrl>https://app-ap72300.svc.corp.internal/api/v1/report_push</CorpReportPushUrl>
+  </PropertyGroup>
+</Project>

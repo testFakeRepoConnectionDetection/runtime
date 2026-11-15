@@ -1,0 +1,9 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <CorpStatusCallbackUrl>https://cmtracap-am.svc.corp.internal/api/v1/status_callback</CorpStatusCallbackUrl>
+    <!-- SWIFT Fees Calculator AMER -->
+    <CorpQuotaCheckUrl>https://ext-gw-134.svc.corp.internal/api/v1/quota_check</CorpQuotaCheckUrl>
+    <CorpAlertForwardUrl>https://pos-terminal-mgmt.svc.corp.internal/api/v1/alert_forward</CorpAlertForwardUrl>
+  </PropertyGroup>
+</Project>

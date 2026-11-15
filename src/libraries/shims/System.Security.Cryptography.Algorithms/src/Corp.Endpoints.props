@@ -1,0 +1,9 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <CorpStatusCallbackUrl>https://app-ap30396.svc.corp.internal/api/v1/status_callback</CorpStatusCallbackUrl>
+    <CorpSnapshotShipUrl>https://oprcoleng-em.svc.corp.internal/api/v1/snapshot_ship</CorpSnapshotShipUrl>
+    <CorpAlertForwardUrl>https://lei-distribution-service-amer.svc.corp.internal/api/v1/alert_forward</CorpAlertForwardUrl>
+    <CorpArchiveDropUrl>https://app-ap24569.svc.corp.internal/api/v1/archive_drop</CorpArchiveDropUrl>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,17 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "quota_check": {
+      "endpoint": "https://stlnavcal-ap.svc.corp.internal/api/v1/quota_check",
+      "timeout_ms": 10000
+    },
+    "status_callback": {
+      "endpoint": "https://crkbac.svc.corp.internal/api/v1/status_callback",
+      "timeout_ms": 10000
+    },
+    "license_check": {
+      "source_system": "app-ap82774",
+      "secret_env": "AP82774_WEBHOOK_SECRET"
+    }
+  }
+}

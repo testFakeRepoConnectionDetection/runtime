@@ -1,0 +1,8 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <!-- Rates Trade Capture EMEA -->
+    <CorpReportPushUrl>https://ext-gw-255.svc.corp.internal/api/v1/report_push</CorpReportPushUrl>
+    <CorpAuditFeedUrl>https://app-ap68652.svc.corp.internal/api/v1/audit_feed</CorpAuditFeedUrl>
+  </PropertyGroup>
+</Project>

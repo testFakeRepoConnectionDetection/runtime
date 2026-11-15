@@ -1,0 +1,6 @@
+{
+  "_comment": "Fake tenant names shown in screenshots and the onboarding tour.",
+  "tenants": [
+    {"id": "demo-01", "display_name": "Identity Token Service AMER"}
+  ]
+}

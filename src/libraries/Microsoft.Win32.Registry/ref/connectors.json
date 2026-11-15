@@ -1,0 +1,13 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "alert_forward": {
+      "source_system": "contact-center-ivr",
+      "secret_env": "CONTACT_CENTER_IVR_WEBHOOK_SECRET"
+    },
+    "license_check": {
+      "source_system": "mtgdocsto",
+      "secret_env": "MTGDOCSTO_WEBHOOK_SECRET"
+    }
+  }
+}

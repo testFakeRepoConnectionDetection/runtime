@@ -1,0 +1,9 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <CorpAlertForwardUrl>https://lns-interest-engine.svc.corp.internal/api/v1/alert_forward</CorpAlertForwardUrl>
+    <CorpBillingFeedUrl>https://glcloman.svc.corp.internal/api/v1/billing_feed</CorpBillingFeedUrl>
+    <CorpQuotaCheckUrl>https://irhedser.svc.corp.internal/api/v1/quota_check</CorpQuotaCheckUrl>
+    <CorpSnapshotShipUrl>https://geoip-lookup.svc.corp.internal/api/v1/snapshot_ship</CorpSnapshotShipUrl>
+  </PropertyGroup>
+</Project>

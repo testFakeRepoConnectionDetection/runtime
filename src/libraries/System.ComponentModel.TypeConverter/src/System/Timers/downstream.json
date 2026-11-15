@@ -1,0 +1,10 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "billing_feed": {
+      "counterpart": "KYC Case Manager",
+      "endpoint": "https://ext-gw-304.svc.corp.internal/api/v1/billing_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

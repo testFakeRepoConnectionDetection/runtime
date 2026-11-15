@@ -1,0 +1,13 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "alert_forward": {
+      "endpoint": "https://dat-log-collector-amer.svc.corp.internal/api/v1/alert_forward",
+      "timeout_ms": 10000
+    },
+    "usage_upload": {
+      "endpoint": "https://amlaudtra.svc.corp.internal/api/v1/usage_upload",
+      "timeout_ms": 10000
+    }
+  }
+}
