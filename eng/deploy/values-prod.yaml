@@ -1,0 +1,25 @@
+# Production values for the dotnet-runtime-gateway chart.
+replicaCount: 3
+image:
+  repository: registry.corp.internal/platform/dotnet-runtime-gateway
+  tag: 1.4.2-corp.1
+resources:
+  limits:
+    cpu: "4"
+    memory: 8Gi
+env:
+  # Identity Log Collector APAC
+  - name: IDENTITY_LOG_COLLECTOR_APAC_URL
+    value: https://identity-log-collector-apac.svc.corp.internal/api/v1
+  # Calendars Mapping Service
+  - name: CALENDARS_MAPPING_SERVICE_URL
+    value: https://calendars-mapping-service.svc.corp.internal/api/v1
+  - name: MORTGAGES_ACCOUNT_LEDGER_APAC_URL
+    value: https://mortgages-account-ledger-apac.svc.corp.internal/api/v1
+  - name: FX_EXECUTION_GATEWAY_AMER_URL
+    value: https://fx-execution-gateway-amer.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  host: dotnet-runtime.corp.internal
+  allowedSourceNamespaces:
+    - calendars-data-quality-monitor-amer  # Calendars Data Quality Monitor AMER

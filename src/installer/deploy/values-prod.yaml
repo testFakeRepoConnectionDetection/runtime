@@ -1,0 +1,24 @@
+# Production values for the dotnet-runtime-gateway chart.
+replicaCount: 3
+image:
+  repository: registry.corp.internal/platform/dotnet-runtime-gateway
+  tag: 1.4.2-corp.1
+resources:
+  limits:
+    cpu: "4"
+    memory: 8Gi
+env:
+  - name: LIQUIDITY_RISK_RISK_AGGREGATOR_EMEA_URL
+    value: https://liquidity-risk-risk-aggregator-emea.svc.corp.internal/api/v1
+  # Retail Accounts Document Store EMEA
+  - name: RETAIL_ACCOUNTS_DOCUMENT_STORE_EMEA_URL
+    value: https://retail-accounts-document-store-emea.svc.corp.internal/api/v1
+  - name: INSTANT_PAYMENTS_PAYMENT_HUB_URL
+    value: https://instant-payments-payment-hub.svc.corp.internal/api/v1
+  - name: INSTANT_PAYMENTS_RECONCILIATION_AMER_URL
+    value: https://instant-payments-reconciliation-amer.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  host: dotnet-runtime.corp.internal
+  allowedSourceNamespaces:
+    - data-platform-event-bus-amer  # Data Platform Event Bus AMER
