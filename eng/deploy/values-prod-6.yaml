@@ -1,0 +1,17 @@
+# Production values for the dotnet-runtime-gateway chart.
+replicaCount: 3
+env:
+  - name: SMS_SENDER_URL
+    value: https://sms-sender.svc.corp.internal/api/v1
+  # Corporate Accounts Interest Engine EMEA
+  - name: EXT_GW_708_URL
+    value: https://ext-gw-708.svc.corp.internal/api/v1
+  # Rates Algo Engine AMER
+  - name: EXT_GW_803_URL
+    value: https://ext-gw-803.svc.corp.internal/api/v1
+  - name: DATA_PLATFORM_LOG_COLLECTOR_AMER_URL
+    value: https://data-platform-log-collector-amer.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - instant-payments-settlement-engine-apac

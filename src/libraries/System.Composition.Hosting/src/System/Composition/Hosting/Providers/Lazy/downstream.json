@@ -1,0 +1,18 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "alert_forward": {
+      "counterpart": "Corporate Accounts Interest Engine EMEA",
+      "endpoint": "https://ext-gw-708.svc.corp.internal/api/v1/alert_forward",
+      "timeout_ms": 10000
+    },
+    "archive_drop": {
+      "endpoint": "https://translation-svc.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    },
+    "usage_upload": {
+      "source_system": "sepa-payment-gateway-emea",
+      "secret_env": "SEPA_PAYMENT_GATEWAY_EMEA_WEBHOOK_SECRET"
+    }
+  }
+}

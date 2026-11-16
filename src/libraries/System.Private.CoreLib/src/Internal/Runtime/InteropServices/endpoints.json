@@ -1,9 +1,0 @@
-{
-  "producer": "dotnet-runtime",
-  "integrations": {
-    "snapshot_ship": {
-      "endpoint": "https://monsecvau-em.svc.corp.internal/api/v1/snapshot_ship",
-      "timeout_ms": 10000
-    }
-  }
-}

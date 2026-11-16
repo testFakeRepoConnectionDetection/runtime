@@ -1,0 +1,10 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "nightly_export": {
+      "counterpart": "Credit PnL Explain APAC",
+      "source_system": "ext-gw-801",
+      "secret_env": "EXT_GW_801_WEBHOOK_SECRET"
+    }
+  }
+}

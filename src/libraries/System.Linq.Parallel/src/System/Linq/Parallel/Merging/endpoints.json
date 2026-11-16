@@ -1,0 +1,9 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "catalog_pull": {
+      "endpoint": "https://market-risk-var-engine-apac.svc.corp.internal/api/v1/catalog_pull",
+      "timeout_ms": 10000
+    }
+  }
+}

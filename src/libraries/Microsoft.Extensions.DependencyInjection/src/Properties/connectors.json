@@ -1,0 +1,19 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "status_callback": {
+      "counterpart": "Equity Derivatives Algo Engine",
+      "endpoint": "https://ext-gw-861.svc.corp.internal/api/v1/status_callback",
+      "timeout_ms": 10000
+    },
+    "quota_check": {
+      "counterpart": "Integration Scheduler EMEA",
+      "endpoint": "https://ext-gw-853.svc.corp.internal/api/v1/quota_check",
+      "timeout_ms": 10000
+    },
+    "nightly_export": {
+      "endpoint": "https://messaging-api-gateway-emea.svc.corp.internal/api/v1/nightly_export",
+      "timeout_ms": 10000
+    }
+  }
+}

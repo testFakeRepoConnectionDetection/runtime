@@ -1,0 +1,8 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <!-- Settlement NAV Calculator APAC -->
+    <CorpBillingFeedUrl>https://ext-gw-368.svc.corp.internal/api/v1/billing_feed</CorpBillingFeedUrl>
+    <CorpCatalogPullUrl>https://liquidity-risk-exposure-calculator.svc.corp.internal/api/v1/catalog_pull</CorpCatalogPullUrl>
+  </PropertyGroup>
+</Project>

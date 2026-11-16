@@ -1,9 +1,0 @@
-{
-  "producer": "dotnet-runtime",
-  "integrations": {
-    "report_push": {
-      "endpoint": "https://app-ap63921.svc.corp.internal/api/v1/report_push",
-      "timeout_ms": 10000
-    }
-  }
-}

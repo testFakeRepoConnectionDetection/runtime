@@ -1,0 +1,12 @@
+# Production values for the dotnet-runtime-gateway chart.
+replicaCount: 3
+env:
+  - name: MARKET_RISK_VAR_ENGINE_APAC_URL
+    value: https://market-risk-var-engine-apac.svc.corp.internal/api/v1
+  # Rates Execution Gateway AMER
+  - name: EXT_GW_424_URL
+    value: https://ext-gw-424.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - ext-gw-787  # KYC Transaction Monitor APAC

@@ -1,0 +1,7 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <CorpReportPushUrl>https://credit-execution-gateway.svc.corp.internal/api/v1/report_push</CorpReportPushUrl>
+    <CorpIncidentHookUrl>https://general-ledger-close-manager.svc.corp.internal/api/v1/incident_hook</CorpIncidentHookUrl>
+  </PropertyGroup>
+</Project>

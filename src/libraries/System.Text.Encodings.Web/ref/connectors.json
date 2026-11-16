@@ -1,0 +1,9 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "status_callback": {
+      "endpoint": "https://fund-administration-asset-servicing-emea.svc.corp.internal/api/v1/status_callback",
+      "timeout_ms": 10000
+    }
+  }
+}

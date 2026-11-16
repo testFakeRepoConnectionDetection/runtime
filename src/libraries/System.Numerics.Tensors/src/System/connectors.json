@@ -1,0 +1,14 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "license_check": {
+      "counterpart": "Rates Trade Capture EMEA",
+      "endpoint": "https://ext-gw-255.svc.corp.internal/api/v1/license_check",
+      "timeout_ms": 10000
+    },
+    "alert_forward": {
+      "endpoint": "https://aml-alert-generator-apac.svc.corp.internal/api/v1/alert_forward",
+      "timeout_ms": 10000
+    }
+  }
+}

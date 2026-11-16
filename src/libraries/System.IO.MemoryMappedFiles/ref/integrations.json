@@ -1,9 +1,0 @@
-{
-  "producer": "dotnet-runtime",
-  "integrations": {
-    "metrics_relay": {
-      "endpoint": "https://crexegat.svc.corp.internal/api/v1/metrics_relay",
-      "timeout_ms": 10000
-    }
-  }
-}

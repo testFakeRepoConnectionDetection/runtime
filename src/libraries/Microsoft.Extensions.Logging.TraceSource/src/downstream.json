@@ -1,0 +1,15 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "catalog_pull": {
+      "counterpart": "Rates Algo Engine AMER",
+      "endpoint": "https://ext-gw-803.svc.corp.internal/api/v1/catalog_pull",
+      "timeout_ms": 10000
+    },
+    "nightly_export": {
+      "counterpart": "Counterparty Risk Collateral Engine APAC",
+      "source_system": "ext-gw-466",
+      "secret_env": "EXT_GW_466_WEBHOOK_SECRET"
+    }
+  }
+}

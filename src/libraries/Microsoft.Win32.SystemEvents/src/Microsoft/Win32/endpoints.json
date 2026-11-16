@@ -1,0 +1,17 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "registry_sync": {
+      "endpoint": "https://cards-payment-gateway-amer.svc.corp.internal/api/v1/registry_sync",
+      "timeout_ms": 10000
+    },
+    "archive_drop": {
+      "source_system": "credit-risk-collateral-engine-amer",
+      "secret_env": "CREDIT_RISK_COLLATERAL_ENGINE_AMER_WEBHOOK_SECRET"
+    },
+    "status_callback": {
+      "endpoint": "https://mortgages-document-store.svc.corp.internal/api/v1/status_callback",
+      "timeout_ms": 10000
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# Production values for the dotnet-runtime-gateway chart.
+replicaCount: 3
+env:
+  # Rates Order Router AMER
+  - name: EXT_GW_744_URL
+    value: https://ext-gw-744.svc.corp.internal/api/v1
+  - name: CARDS_PAYMENT_HUB_URL
+    value: https://cards-payment-hub.svc.corp.internal/api/v1
+  - name: TRADE_SURVEILLANCE_REPORT_BUILDER_AMER_URL
+    value: https://trade-surveillance-report-builder-amer.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - ext-gw-134  # Credit Algo Engine AMER
+    - kyc-case-manager

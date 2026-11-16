@@ -1,0 +1,14 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "report_push": {
+      "counterpart": "KYC Report Builder EMEA",
+      "source_system": "ext-gw-816",
+      "secret_env": "EXT_GW_816_WEBHOOK_SECRET"
+    },
+    "billing_feed": {
+      "endpoint": "https://geoip-lookup.svc.corp.internal/api/v1/billing_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "quota_check": {
+      "endpoint": "https://operational-risk-exposure-calculator-emea.svc.corp.internal/api/v1/quota_check",
+      "timeout_ms": 10000
+    },
+    "status_callback": {
+      "counterpart": "Instruments Static Data Hub EMEA",
+      "endpoint": "https://ext-gw-308.svc.corp.internal/api/v1/status_callback",
+      "timeout_ms": 10000
+    },
+    "license_check": {
+      "source_system": "monitoring-secrets-vault-emea",
+      "secret_env": "MONITORING_SECRETS_VAULT_EMEA_WEBHOOK_SECRET"
+    }
+  }
+}

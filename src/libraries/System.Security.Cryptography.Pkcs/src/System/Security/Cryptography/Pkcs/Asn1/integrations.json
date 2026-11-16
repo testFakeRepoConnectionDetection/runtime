@@ -1,0 +1,18 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "incident_hook": {
+      "counterpart": "SEPA Fees Calculator AMER",
+      "source_system": "ext-gw-951",
+      "secret_env": "EXT_GW_951_WEBHOOK_SECRET"
+    },
+    "registry_sync": {
+      "endpoint": "https://deposits-interest-engine-amer.svc.corp.internal/api/v1/registry_sync",
+      "timeout_ms": 10000
+    },
+    "snapshot_ship": {
+      "source_system": "monitoring-directory-service-amer",
+      "secret_env": "MONITORING_DIRECTORY_SERVICE_AMER_WEBHOOK_SECRET"
+    }
+  }
+}

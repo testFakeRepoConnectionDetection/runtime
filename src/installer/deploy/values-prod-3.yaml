@@ -1,0 +1,14 @@
+# Production values for the dotnet-runtime-gateway chart.
+replicaCount: 3
+env:
+  # Treasury Reporting Mart EMEA
+  - name: EXT_GW_106_URL
+    value: https://ext-gw-106.svc.corp.internal/api/v1
+  - name: TRANSLATION_SVC_URL
+    value: https://translation-svc.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - commodities-trade-capture-amer
+    - fund-administration-event-processor-apac
+    - ext-gw-469  # Integration Directory Service APAC

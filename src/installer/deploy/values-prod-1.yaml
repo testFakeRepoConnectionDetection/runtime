@@ -1,16 +1,13 @@
 # Production values for the dotnet-runtime-gateway chart.
 replicaCount: 3
 env:
-  - name: LQREXPCAL_URL
-    value: https://lqrexpcal.svc.corp.internal/api/v1
-  - name: KYC_TRANSACTION_MONITOR_APAC_URL
-    value: https://kyc-transaction-monitor-apac.svc.corp.internal/api/v1
-  - name: CARDS_PAYMENT_GATEWAY_AMER_URL
-    value: https://crd-payment-gateway-amer.svc.corp.internal/api/v1
-  - name: CACPROCAT_URL
-    value: https://cacprocat.svc.corp.internal/api/v1
-  - name: ARTIFACT_MIRROR_URL
-    value: https://artifact-mirror.svc.corp.internal/api/v1
+  - name: CALENDARS_STATIC_DATA_HUB_EMEA_URL
+    value: https://calendars-static-data-hub-emea.svc.corp.internal/api/v1
+  # Rates Order Router AMER
+  - name: EXT_GW_744_URL
+    value: https://ext-gw-744.svc.corp.internal/api/v1
 ingress:
   enabled: true
   allowedSourceNamespaces:
+    - ext-gw-242  # Accounting Close Manager APAC
+    - ext-gw-550  # SWIFT Fees Calculator AMER

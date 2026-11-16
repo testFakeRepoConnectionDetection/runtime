@@ -1,0 +1,9 @@
+{
+  "producer": "dotnet-runtime",
+  "integrations": {
+    "incident_hook": {
+      "endpoint": "https://pos-terminal-mgmt.svc.corp.internal/api/v1/incident_hook",
+      "timeout_ms": 10000
+    }
+  }
+}

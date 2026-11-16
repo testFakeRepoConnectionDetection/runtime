@@ -1,0 +1,12 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <CorpUsageUploadUrl>https://esg-scores-feed.svc.corp.internal/api/v1/usage_upload</CorpUsageUploadUrl>
+    <!-- Settlement NAV Calculator AMER -->
+    <CorpRegistrySyncUrl>https://ext-gw-526.svc.corp.internal/api/v1/registry_sync</CorpRegistrySyncUrl>
+    <!-- Rates Hedging Service -->
+    <CorpAlertForwardUrl>https://ext-gw-670.svc.corp.internal/api/v1/alert_forward</CorpAlertForwardUrl>
+    <!-- Corporate Actions Event Processor -->
+    <CorpStatusCallbackUrl>https://ext-gw-390.svc.corp.internal/api/v1/status_callback</CorpStatusCallbackUrl>
+  </PropertyGroup>
+</Project>

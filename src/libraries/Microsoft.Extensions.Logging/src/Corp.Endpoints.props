@@ -1,0 +1,7 @@
+<Project>
+  <!-- Endpoints compiled into corp builds (/p:CorpBuild=true). -->
+  <PropertyGroup Condition="'$(CorpBuild)' == 'true'">
+    <CorpIncidentHookUrl>https://legal-entities-distribution-service-amer.svc.corp.internal/api/v1/incident_hook</CorpIncidentHookUrl>
+    <CorpArchiveDropUrl>https://calendars-data-quality-monitor-amer.svc.corp.internal/api/v1/archive_drop</CorpArchiveDropUrl>
+  </PropertyGroup>
+</Project>
